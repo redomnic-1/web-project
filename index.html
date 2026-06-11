@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>London Web Server</title>
+<title>Spider-Man London Server</title>
 
 <style>
 *{
@@ -14,37 +14,44 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad');
+    background: linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad');
     background-size: cover;
     background-position: center;
     height:100vh;
     color:white;
 }
 
-.overlay{
-    background: rgba(0,0,0,0.65);
-    width:100%;
-    height:100vh;
+.container{
     display:flex;
     justify-content:center;
     align-items:center;
+    height:100vh;
+    text-align:center;
 }
 
-.container{
-    text-align:center;
+.card{
+    background:rgba(0,0,0,0.6);
     padding:40px;
-    background: rgba(255,255,255,0.1);
     border-radius:15px;
-    backdrop-filter: blur(5px);
+    box-shadow:0 0 25px rgba(255,0,0,0.6);
+    max-width:700px;
 }
 
 h1{
+    color:#ff0000;
     font-size:60px;
     margin-bottom:20px;
 }
 
+h2{
+    color:#ffffff;
+    margin-bottom:20px;
+}
+
 p{
-    font-size:22px;
+    font-size:20px;
     margin:10px 0;
 }
 
@@ -52,24 +59,32 @@ p{
     display:inline-block;
     margin-top:20px;
     padding:12px 25px;
-    background:#e63946;
+    background:#ff0000;
     color:white;
     text-decoration:none;
     border-radius:5px;
     font-weight:bold;
 }
-</style>
 
+.btn:hover{
+    background:#cc0000;
+}
+</style>
 </head>
+
 <body>
 
-<div class="overlay">
-    <div class="container">
-        <h1>🇬🇧 London Web Server</h1>
+<div class="container">
+    <div class="card">
+        <h1>🕷 Spider-Man Server</h1>
+        <h2>🇬🇧 London Web Project</h2>
+
         <p>Hosted on AWS EC2</p>
         <p>Apache Web Server Running Successfully</p>
-        <p>Deployed via GitHub</p>
-        <a href="#" class="btn">Welcome to London</a>
+        <p>Deployed using GitHub & User Data Script</p>
+        <p>With Great Power Comes Great Responsibility</p>
+
+        <a href="#" class="btn">Welcome Hero</a>
     </div>
 </div>
 
