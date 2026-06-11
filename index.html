@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>London Web Server</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    color:white;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.65);
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+    padding:40px;
+    background: rgba(255,255,255,0.1);
+    border-radius:15px;
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:22px;
+    margin:10px 0;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#e63946;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="overlay">
+    <div class="container">
+        <h1>🇬🇧 London Web Server</h1>
+        <p>Hosted on AWS EC2</p>
+        <p>Apache Web Server Running Successfully</p>
+        <p>Deployed via GitHub</p>
+        <a href="#" class="btn">Welcome to London</a>
+    </div>
+</div>
+
+</body>
+</html>
